@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export const LoadingScreen = ({onComplete}) => {
     const [text, setText] = useState("");
-    const fullText = "<Welcome, I'm Niek />";
+    const fullText = "<Welcome! />";
 
     useEffect(() => {
         let index = 0;
@@ -15,7 +15,7 @@ export const LoadingScreen = ({onComplete}) => {
                 
                 setTimeout(() => {
                     onComplete();
-                }, 1000);
+                }, 500);
             }
         }, 70);
 
