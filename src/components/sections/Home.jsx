@@ -11,7 +11,7 @@ export const Home = () => {
                         Hi, I'm Niek Damink
                     </h1>
                     <p className="text-lg text-gray-400 mb-8 max-w-lg mx-auto">
-                        I am a Master's student in Computer Science and a passionate web developer
+                        I am a <span className='text-blue-500 font-bold'>Master's student</span> in Computer Science and a passionate <span className='text-blue-500 font-bold'>Web Developer</span>
                     </p>
                     <div className="flex justify-center space-x-4">
                         <a 
