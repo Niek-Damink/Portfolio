@@ -1,10 +1,10 @@
-import { FaYoutube, FaGithub, FaBookOpen} from 'react-icons/fa';
+import { FaYoutube, FaGithub, FaBookOpen, FaGlobe} from 'react-icons/fa';
 
 const projects = [
     {title: "MerlinRoads", technologies:["Python", "Dash", "Dash Sylvereye", "SUMO", "HERE/TomTom/Maps APIs"], links:[{icon:FaGithub, link:"#git"}, {icon:FaYoutube, link:"#youtube"}], description:"MerlinRoads is an interactive dashboard for visualizing and analyzing car accident data on urban road networks. It combines real-time and historical data with features like map filtering, SUMO-based traffic simulation, and visual analytics to support data-driven decisions."},
     {title: "LBC Task Scheduling Heuristic", technologies:["Python", "R", "IGraph", "Jupyter Notebook", "Data Visualization"], links:[{icon:FaGithub, link:"#git"}, {icon:FaBookOpen, link:"#paper"}], description:"This project, developed as part of my thesis, introduces task scheduling heuristics based on Longest Betweenness Centrality to improve efficiency in distributed systems. The heuristics are evaluated against established methods using synthetic task graphs."},
-    {title: "PokerPals", technologies:["Django", "tailwindCSS", "Python", "JavaScript"], links:[{icon:FaGithub, link:"#git"}], description:"This project is a poker statistics website built for my friend group, featuring player accounts, team chats, and awards like most wins or losses. It tracks game history, detailed player stats, and total earnings across all sessions."},
-    {title: "Portofolio", technologies:["React", "TailwindCSS", "JavaScript"], links:[{icon:FaGithub, link:"#git"}], description:"This website is my personal portfolio, highlighting selected projects, skills, and experience. It is designed to provide a clear overview of my work and an easy way to get in touch."}
+    {title: "PokerPals", technologies:["Django", "tailwindCSS", "Python", "JavaScript"], links:[{icon:FaGithub, link:"#git"}, {icon:FaGlobe, link:"#site"}], description:"PokerPals is a poker statistics website built for my friend group. It features player accounts, team chats, and awards like most wins or losses. It also tracks game history, detailed player stats, and total earnings across all sessions."},
+    {title: "Portofolio", technologies:["React", "TailwindCSS", "JavaScript"], links:[{icon:FaGithub, link:"#git"}, {icon:FaGlobe, link:"#site"}], description:"This project is my personal portfolio. It highlights some of my projects, skills, and experiences. It is designed to provide a clear overview of my work and an easy way to get in touch."}
 ]
 
 export const Projects = () => {
