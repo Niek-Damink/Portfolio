@@ -1,0 +1,32 @@
+import { FaWhatsapp, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+
+export const Contact = () => {
+    return (
+        <section 
+            id="contact"
+            className="flex justify-center py-20"
+        >
+            <div className="max-w-3xl mx-auto px-4 md:min-w-250">
+                <h2 className="text-3xl font-bold mb-8 text-center text-blue-500">
+                    Contact
+                </h2>
+                <div className="flex justify-center space-x-10">
+                    <a href='#linkedin'>
+                        <FaLinkedin className='text-4xl text-white hover:text-blue-400 hover:-translate-y-1 transition-all' />
+                    </a>
+                    <a href='#github'>
+                        <FaGithub className='text-4xl text-white hover:text-blue-400 hover:-translate-y-1 transition-all' />
+                    </a>
+                    <a href='#instagram'>
+                        <FaInstagram className='text-4xl text-white hover:text-blue-400 hover:-translate-y-1 transition-all' />
+                    </a>
+                    <a href='#whatsapp'>
+                        <FaWhatsapp className='text-4xl text-white hover:text-blue-400 hover:-translate-y-1 transition-all' />
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    )
+
+}

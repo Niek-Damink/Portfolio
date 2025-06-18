@@ -30,7 +30,7 @@ export const About = () => {
                 className="min-h-screen flex items-center justify-center py-20"
            >
             <div className="max-w-3xl mx-auto px-4 md:min-w-250 ">
-                <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-center text-transparent">
+                <h2 className="text-3xl font-bold mb-8 text-center text-blue-500">
                     About Me
                 </h2>
                 <div className="flex md:flex-row flex-col md:space-x-25 space-y-2 mb-10 justify-around items-center">
