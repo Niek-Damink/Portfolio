@@ -14,11 +14,11 @@ export const Home = () => {
                         I am a <span className='text-blue-500 font-bold'>Master's student</span> in Computer Science and a passionate <span className='text-blue-500 font-bold'>Web Developer</span>
                     </p>
                     <div className="flex justify-center space-x-4">
-                        <a 
-                            href="#about"
-                            className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:bg-blue-400 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
-                        >
-                            More about me &#9662;
+                        <a href="#about" className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:bg-blue-400 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
+                            More About Me
+                        </a>
+                        <a href="#contact" className="bg-blue-500/10 border-2 border-blue-500/30 text-blue-500 py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:bg-blue-500/20 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
+                            Contact Me
                         </a>
                     </div>
                 </div>
