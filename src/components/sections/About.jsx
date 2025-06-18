@@ -75,7 +75,7 @@ export const About = () => {
                         {skills.map((skill, key) => (
                             <span
                                 key={key}
-                                className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition'
+                                className='bg-blue-500/20 text-blue-500 py-1 px-3 rounded-full text-md hover:bg-blue-500/30 hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition'
                             >
                                 {skill}
                             </span>
@@ -84,7 +84,7 @@ export const About = () => {
                     </div>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-15'>
-                    <div className='p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all'>
+                    <div className='p-6 rounded-xl border-white/10 border-4 hover:-translate-y-1 transition-all'>
                         <div className='flex items-center space-x-4'>
                             <FaGraduationCap className="text-blue-400 text-2xl" />
                             <h3 className='text-xl font-bold '>Education</h3>
@@ -100,7 +100,7 @@ export const About = () => {
                                     <FaMapMarkerAlt className='text-blue-300'/>
                                     <p className='text-blue-300 font-medium mb-1'>University of Twente</p>
                                 </div>
-                                <p>I am currently in my first year of the Master Computer Science, specializing in Software Technology.</p>
+                                <p>I am currently in my first year of the Master Computer Science, specializing in Software Technology and Formal Methods.</p>
                             </li>
 
                             <li>
@@ -117,7 +117,7 @@ export const About = () => {
                             </li>
                         </ul>
                     </div> 
-                    <div className='p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all'>
+                    <div className='p-6 rounded-xl border-white/10 border-4 hover:-translate-y-1 transition-all'>
                         <div className='flex items-center space-x-4'>
                             <FaBriefcase className="text-blue-400 text-2xl" />
                             <h3 className='text-xl font-bold '>Work Experience</h3>
