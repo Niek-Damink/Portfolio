@@ -1,4 +1,6 @@
 import { FaWhatsapp, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+
 
 export const Contact = () => {
     return (
@@ -11,17 +13,20 @@ export const Contact = () => {
                     Contact
                 </h2>
                 <div className="flex justify-center space-x-10">
-                    <a href='#linkedin'>
+                    <a href='https://www.linkedin.com/in/niek-damink' target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className='text-4xl text-white hover:text-blue-400 hover:-translate-y-1 transition-all' />
                     </a>
-                    <a href='#github'>
+                    <a href='https://github.com/Niek-Damink' target="_blank" rel="noopener noreferrer">
                         <FaGithub className='text-4xl text-white hover:text-blue-400 hover:-translate-y-1 transition-all' />
                     </a>
-                    <a href='#instagram'>
+                    <a href='https://www.instagram.com/niek.damink' target="_blank" rel="noopener noreferrer">
                         <FaInstagram className='text-4xl text-white hover:text-blue-400 hover:-translate-y-1 transition-all' />
                     </a>
-                    <a href='#whatsapp'>
+                    <a href='https://wa.me/+31630787768' target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp className='text-4xl text-white hover:text-blue-400 hover:-translate-y-1 transition-all' />
+                    </a>
+                    <a href='mailto:niek-damink@hotmail.com' target="_blank" rel="noopener noreferrer">
+                        <MdEmail className='text-4xl text-white hover:text-blue-400 hover:-translate-y-1 transition-all' />
                     </a>
                 </div>
             </div>
