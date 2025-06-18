@@ -32,7 +32,7 @@ export const Projects = () => {
                             <div className='flex gap-5 py-4 pl-2'>
                             {project.links.map((link, key3) => (
                                 <a key={key3} href={link.link}>
-                                    <link.icon className='text-xl' />
+                                    <link.icon className='text-xl text-white hover:text-white/50 transition-all hover:-translate-y-1 ' />
                                 </a>
                             ))}
                             </div>
