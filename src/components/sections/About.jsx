@@ -84,7 +84,7 @@ export const About = () => {
                     </div>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-15'>
-                    <div className='p-6 rounded-xl border-white/10 border-4 hover:-translate-y-1 transition-all'>
+                    <div className='p-6 rounded-xl border-white/10 border-4 hover:border-blue-500/30 hover:-translate-y-1 transition-all'>
                         <div className='flex items-center space-x-4'>
                             <FaGraduationCap className="text-blue-400 text-2xl" />
                             <h3 className='text-xl font-bold '>Education</h3>
@@ -117,7 +117,7 @@ export const About = () => {
                             </li>
                         </ul>
                     </div> 
-                    <div className='p-6 rounded-xl border-white/10 border-4 hover:-translate-y-1 transition-all'>
+                    <div className='p-6 rounded-xl border-white/10 hover:border-blue-500/30 border-4 hover:-translate-y-1 transition-all'>
                         <div className='flex items-center space-x-4'>
                             <FaBriefcase className="text-blue-400 text-2xl" />
                             <h3 className='text-xl font-bold '>Work Experience</h3>
