@@ -19,9 +19,9 @@ export const Projects = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {projects.map((project, key) => (
-                        <div key={key} className="p-6 rounded-xl border-4 border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+                        <div key={key} className="p-6 rounded-xl border-4 border-titleText/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
                             <h3 className="text-xl font-bold mb-2 text-blue-500"> {project.title} </h3>
-                            <p className="text-gray-300"> {project.description}</p>
+                            <p className="text-primaryText"> {project.description}</p>
                             <div className='flex flex-wrap gap-3 my-4'>
                             {project.technologies.map((technology, key2) => (
                                 <span key={key2} className='bg-blue-500/20 text-blue-500 py-1 px-3 rounded-full text-md hover:bg-blue-500/30 hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition'>
@@ -36,7 +36,7 @@ export const Projects = () => {
                                     href={link.link} 
                                     target="_blank" 
                                     rel="noreferrer" 
-                                    className='text-gray-300 hover:text-blue-400 flex flex-col transition-all hover:-translate-y-1 items-center'
+                                    className='text-primaryText hover:text-blue-400 flex flex-col transition-all hover:-translate-y-1 items-center'
                                 >
                                     <link.icon className='text-3xl' />
                                     <p className='text-center mt-1 font-bold'>{link.name}</p>

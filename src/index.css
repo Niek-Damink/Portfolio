@@ -9,6 +9,27 @@ html, body {
   color: #f3f4f6;
 }
 
+@theme {
+  --color-background: var(--background);
+  --color-primaryText: var(--primaryText);
+  --color-titleText: var(--titleText);
+  --color-cardBackground: var(--cardBackground);
+}
+
+:root {
+  --background: #000;
+  --primaryText: #D1D5DB;
+  --titleText: #fff;
+  --cardBackground: #1F2937;
+}
+
+.light {
+  --background: #fff;
+  --primaryText: #1a202c;
+  --titleText: #000;
+  --cardBackground: #E5E7EB;
+}
+
 @layer utilities {
   @keyframes blink {
     0%, 100% {
