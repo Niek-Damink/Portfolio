@@ -6,7 +6,7 @@ const techStack = [
     { icon: FaJava, name: 'Java', description: 'Backend Development', color: "text-blue-200", bgColor: "bg-cyan-900" },
     { icon: DiPython, name: 'Python', description: 'Backend Development', color: "text-yellow-300", bgColor: "bg-yellow-900" },
     { icon: SiJavascript, name: 'JavaScript', description: 'Web Scripting', color: 'text-yellow-400', bgColor: 'bg-yellow-900' },
-,   { icon: FaDatabase, name: 'SQL', description: 'Database Querying', color: 'text-blue-600', bgColor: 'bg-blue-100' },
+    { icon: FaDatabase, name: 'SQL', description: 'Database Querying', color: 'text-blue-600', bgColor: 'bg-blue-100' },
     { icon: FaReact, name: 'React', description: 'JavaScript Library', color:"text-cyan-400", bgColor:"bg-teal-900"},
     { icon: SiDjango, name: 'Django', description: 'Python Web Framework', color: 'text-green-500', bgColor: 'bg-green-900' },
     { icon: SiDash, name: 'Dash', description: 'Python Web Framework', color: 'text-indigo-400', bgColor: 'bg-indigo-900' },
@@ -75,7 +75,7 @@ export const About = () => {
                         {skills.map((skill, key) => (
                             <span
                                 key={key}
-                                className='bg-blue-500/20 text-blue-500 py-1 px-3 rounded-full text-md hover:bg-blue-500/30 hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition'
+                                className='bg-blue-500/20 text-blue-500 py-1 px-3 rounded-full text-md hover:bg-blue-500/30 hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition'
                             >
                                 {skill}
                             </span>
