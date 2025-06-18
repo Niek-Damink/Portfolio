@@ -15,14 +15,14 @@ export const Home = () => {
                         I am a <span className='text-blue-500 font-bold'>Master's student</span> in Computer Science and a passionate <span className='text-blue-500 font-bold'>Web Developer</span>
                     </p>
                     <div className="flex justify-center gap-4 hover:gap-8 transition-all duration-500">
-                        <a href="#about" className="bg-blue-500/30 text-blue-500 py-3 px-6 rounded-l-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:bg-blue-400 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
+                        <a href="#about" className="bg-blue-500/30 text-blue-500 py-3 px-6 rounded-l-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:bg-blue-500/50 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
                             More About Me
                         </a>
-                        <a href="/CV.pdf" download="CV.pdf" className='bg-blue-500/30 text-blue-500 py-3 px-6 rounded font-medium flex items-center gap-x-2 hover:-translate-y-0.5 hover:bg-blue-400 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]'>
+                        <a href="/CV.pdf" download="CV.pdf" className='bg-blue-500/30 text-blue-500 py-3 px-6 rounded font-medium flex items-center gap-x-2 hover:-translate-y-0.5 hover:bg-blue-500/50 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]'>
                         CV
                         <FaDownload />
                         </a>
-                        <a href="#contact" className="bg-blue-500/30 text-blue-500 py-3 px-6 rounded-r-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:bg-blue-400 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
+                        <a href="#contact" className="bg-blue-500/30 text-blue-500 py-3 px-6 rounded-r-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:bg-blue-500/50 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
                             Contact Me
                         </a>
                     </div>

@@ -1,10 +1,10 @@
 import { FaYoutube, FaGithub, FaBookOpen, FaGlobe} from 'react-icons/fa';
 
 const projects = [
-    {title: "MerlinRoads", technologies:["Python", "Dash", "Dash Sylvereye", "SUMO", "HERE/TomTom/Maps APIs"], links:[{icon:FaGithub, link:"#git"}, {icon:FaYoutube, link:"#youtube"}], description:"MerlinRoads is an interactive dashboard for visualizing and analyzing car accident data on urban road networks. It combines real-time and historical data with features like map filtering, SUMO-based traffic simulation, and visual analytics to support data-driven decisions."},
-    {title: "LBC Task Scheduling Heuristic", technologies:["Python", "R", "IGraph", "Jupyter Notebook", "Data Visualization"], links:[{icon:FaGithub, link:"#git"}, {icon:FaBookOpen, link:"#paper"}], description:"This project, developed as part of my thesis, introduces task scheduling heuristics based on Longest Betweenness Centrality to improve efficiency in distributed systems. The heuristics are evaluated against established methods using synthetic task graphs."},
-    {title: "PokerPals", technologies:["Django", "tailwindCSS", "Python", "JavaScript"], links:[{icon:FaGithub, link:"#git"}, {icon:FaGlobe, link:"#site"}], description:"PokerPals is a poker statistics website built for my friend group. It features player accounts, team chats, and awards like most wins or losses. It also tracks game history, detailed player stats, and total earnings across all sessions."},
-    {title: "Portofolio", technologies:["React", "TailwindCSS", "JavaScript"], links:[{icon:FaGithub, link:"#git"}, {icon:FaGlobe, link:"#site"}], description:"This project is my personal portfolio. It highlights some of my projects, skills, and experiences. It is designed to provide a clear overview of my work and an easy way to get in touch."}
+    {title: "MerlinRoads", technologies:["Python", "Dash", "Dash Sylvereye", "SUMO", "HERE/TomTom/Maps APIs"], links:[{icon:FaGithub, link:"#git", name:"Github"}, {icon:FaYoutube, link:"#youtube", name:"Overview"}], description:"MerlinRoads is an interactive dashboard for visualizing and analyzing car accident data on urban road networks. It combines real-time and historical data with features like map filtering, SUMO-based traffic simulation, and visual analytics to support data-driven decisions."},
+    {title: "LBC Task Scheduling Heuristic", technologies:["Python", "R", "IGraph", "Jupyter Notebook", "Data Visualization"], links:[{icon:FaGithub, link:"#git", name:"Github"}, {icon:FaBookOpen, link:"#paper", name:"Read"}], description:"This project, developed as part of my thesis, introduces task scheduling heuristics based on Longest Betweenness Centrality to improve efficiency in distributed systems. The heuristics are evaluated against established methods using synthetic task graphs."},
+    {title: "PokerPals", technologies:["Django", "tailwindCSS", "Python", "JavaScript"], links:[{icon:FaGithub, link:"#git", name:"Github"}, {icon:FaGlobe, link:"#site", name:"Visit"}], description:"PokerPals is a poker statistics website built for my friend group. It features player accounts, team chats, and awards like most wins or losses. It also tracks game history, detailed player stats, and total earnings across all sessions."},
+    {title: "Portofolio", technologies:["React", "TailwindCSS", "JavaScript"], links:[{icon:FaGithub, link:"#git", name:"Github"}, {icon:FaGlobe, link:"#site", name:"Visit"}], description:"This website serves as my personal portfolio, where I share a selection of projects I have worked on, along with an overview of the skills I have developed and the experiences I have gained through various learning and work opportunities."}
 ]
 
 export const Projects = () => {
@@ -31,8 +31,9 @@ export const Projects = () => {
                             </div>
                             <div className='flex gap-8 py-4 pl-2'>
                             {project.links.map((link, key3) => (
-                                <a key={key3} href={link.link}>
-                                    <link.icon className='text-3xl text-white hover:text-blue-400 transition-all hover:-translate-y-1 ' />
+                                <a key={key3} href={link.link} className='text-gray-300 hover:text-blue-400 flex flex-col transition-all hover:-translate-y-1 items-center'>
+                                    <link.icon className='text-3xl' />
+                                    <p className='text-center mt-1 font-bold'>{link.name}</p>
                                 </a>
                             ))}
                             </div>
