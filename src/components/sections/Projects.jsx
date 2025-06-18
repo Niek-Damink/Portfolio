@@ -14,7 +14,7 @@ export const Projects = () => {
             id="projects"
             className="min-h-screen flex items-center justify-center py-20">
             <div className="max-w-5xl mx-auto px-4">
-                <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-center text-transparent">
+                <h2 className="text-3xl font-bold mb-8 text-center text-blue-500">
                     Projects
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -29,10 +29,10 @@ export const Projects = () => {
                                 </span>
                             ))}
                             </div>
-                            <div className='flex gap-5 py-4 pl-2'>
+                            <div className='flex gap-8 py-4 pl-2'>
                             {project.links.map((link, key3) => (
                                 <a key={key3} href={link.link}>
-                                    <link.icon className='text-xl text-white hover:text-white/50 transition-all hover:-translate-y-1 ' />
+                                    <link.icon className='text-3xl text-white hover:text-blue-400 transition-all hover:-translate-y-1 ' />
                                 </a>
                             ))}
                             </div>

@@ -3,7 +3,8 @@ import './index.css'
 import { Navbar } from './components/Navbar';
 import { Projects } from './components/sections/Projects';
 import { Home } from './components/sections/Home';
-import { About } from './components/sections/About'
+import { About } from './components/sections/About';
+import { Contact } from './components/sections/Contact'
 import { MobileMenu } from './components/MobileMenu';
 import { LoadingScreen } from './components/LoadingScreen';
 import { useState } from 'react';
@@ -24,6 +25,7 @@ function App() {
       <Home />
       <About />
       <Projects />
+      <Contact />
 
       </div>
     </>
