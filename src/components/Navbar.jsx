@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import { FaMoon } from "react-icons/fa";
-import { HiSun } from "react-icons/hi";
+import { HiSun, HiMoon } from "react-icons/hi";
 
 export const Navbar = ({menuOpen, setMenuOpen, isDark, setIsDark}) => {
 
@@ -18,26 +17,26 @@ export const Navbar = ({menuOpen, setMenuOpen, isDark, setIsDark}) => {
                     <div className="hidden md:flex items-centers space-x-8 justify-self-center">
                         <a 
                             href="#home"
-                            className="text-primaryText hover:text-titleText/50 transition-colors"
+                            className="text-primaryText hover:text-titleText/50 transition-all duration-500"
                         >
                             Home
                         </a>
 
                         <a 
                             href="#about"
-                            className="text-primaryText hover:text-titleText/50  transition-colors"
+                            className="text-primaryText hover:text-titleText/50 transition-all duration-500"
                         >
                             About
                         </a>
                         <a 
                             href="#projects"
-                            className="text-primaryText hover:text-titleText/50  transition-colors"
+                            className="text-primaryText hover:text-titleText/50 transition-all duration-500"
                         >
                             Projects
                         </a>
                         <a 
                             href="#contact"
-                            className="text-primaryText hover:text-titleText/50  transition-colors"
+                            className="text-primaryText hover:text-titleText/50 transition-all duration-500"
                         >
                             Contact
                         </a>
@@ -51,7 +50,7 @@ export const Navbar = ({menuOpen, setMenuOpen, isDark, setIsDark}) => {
                             &#9776;
                         </div>
                         <a 
-                            className="border-2 border-primaryText/40 p-1.5 rounded-xl"
+                            className={`border-2 ${isDark ? "border-blue-900  hover:border-blue-500 text-blue-600 hover:text-blue-400" : "border-yellow-300 hover:border-yellow-200 text-yellow-500 hover:text-yellow-300"} p-2 rounded-xl`}
                             onClick={() => {
                                 setIsDark((prev) => !prev);
                                 document.documentElement.classList.toggle("light");
@@ -59,9 +58,9 @@ export const Navbar = ({menuOpen, setMenuOpen, isDark, setIsDark}) => {
                         >
                             {
                                 isDark ? (
-                                    <FaMoon className="text-2xl hover:cursor-pointer text-primaryText"/>
+                                    <HiMoon className="text-2xl hover:cursor-pointer"/>
                                 ) : (
-                                    <HiSun className="text-2xl hover:cursor-pointer text-primaryText/80"/>
+                                    <HiSun className="text-2xl hover:cursor-pointer"/>
                                 )
                             }
                         </a>

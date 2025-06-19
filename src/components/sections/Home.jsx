@@ -11,7 +11,7 @@ export const Home = () => {
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
                         Hi, I'm Niek Damink
                     </h1>
-                    <p className="text-lg text-primaryText mb-8 max-w-lg mx-auto">
+                    <p className="text-lg text-primaryText mb-8 max-w-lg mx-auto transition-all duration-500">
                         I am a <span className='text-blue-500 font-bold'>Master's student</span> in Computer Science and a passionate <span className='text-blue-500 font-bold'>Web Developer</span>
                     </p>
                     <div className="flex justify-center gap-4 hover:gap-8 transition-all duration-500">

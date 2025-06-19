@@ -24,10 +24,10 @@ html, body {
 }
 
 .light {
-  --background: #fff;
+  --background: #ececec;
   --primaryText: #1a202c;
   --titleText: #000;
-  --cardBackground: #E5E7EB;
+  --cardBackground: #d6d6d6;
 }
 
 @layer utilities {

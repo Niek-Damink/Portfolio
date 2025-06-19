@@ -14,19 +14,19 @@ export const Contact = () => {
                 </h2>
                 <div className="flex justify-center space-x-10">
                     <a href='https://www.linkedin.com/in/niek-damink' target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all' />
+                        <FaLinkedin className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all duration-500' />
                     </a>
                     <a href='https://github.com/Niek-Damink' target="_blank" rel="noopener noreferrer">
-                        <FaGithub className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all' />
+                        <FaGithub className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all duration-500' />
                     </a>
                     <a href='https://www.instagram.com/niek.damink' target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all' />
+                        <FaInstagram className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all duration-500' />
                     </a>
                     <a href='https://wa.me/+31630787768' target="_blank" rel="noopener noreferrer">
-                        <FaWhatsapp className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all' />
+                        <FaWhatsapp className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all duration-500' />
                     </a>
                     <a href='mailto:niek-damink@hotmail.com' target="_blank" rel="noopener noreferrer">
-                        <MdEmail className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all' />
+                        <MdEmail className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all duration-500' />
                     </a>
                 </div>
             </div>
