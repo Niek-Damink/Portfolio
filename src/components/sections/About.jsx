@@ -59,7 +59,7 @@ export const About = () => {
                         </p>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-5">
                             {techStack.map((tech, index) => (
-                                <div key={index} className="flex flex-row items-center p-2 rounded-xl bg-cardBackground hover:bg-cardBtackground/70 border-2 hover:-translate-y-1 border-cardBackground hover:border-primaryText/10 transition-all duration-500">
+                                <div key={index} className="flex flex-row items-center p-2 rounded-xl bg-cardBackground hover:bg-primaryText/30 border-2 hover:-translate-y-1 border-cardBackground hover:border-primaryText/10 transition-all duration-500">
                                     <div className={`p-3 rounded-lg ${tech.bgColor}`}>
                                         <tech.icon className={`text-2xl ${tech.color}`} />
                                     </div>

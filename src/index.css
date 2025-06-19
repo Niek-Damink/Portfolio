@@ -60,11 +60,11 @@ html, body {
   }
 
   .reveal-top {
-    transform: translateY(-30px)
+    transform: translateY(-40px)
   }
 
   .reveal-bottom {
-    transform: translateY(30px)
+    transform: translateY(40px)
   }
 
   .reveal.visible {
