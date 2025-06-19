@@ -16,9 +16,11 @@ export const Projects = () => {
             className="min-h-screen flex items-center justify-center py-20">
             <div className="max-w-5xl mx-auto px-4">
                 <RevealOnScroll>
-                <h2 className="text-3xl font-bold mb-8 text-center text-blue-500">
-                    Projects
-                </h2>
+                <div className='flex justify-center items-center mb-5'>
+                        <h2 className="text-4xl font-extrabold mb-8 text-center text-blue-500 pb-2 border-b-4 px-5">
+                            Projects
+                        </h2>
+                    </div>
                 </RevealOnScroll>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {projects.map((project, key) => (

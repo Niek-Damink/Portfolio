@@ -9,12 +9,15 @@ export const Contact = () => {
             id="contact"
             className="flex justify-center py-20"
         >
-            <RevealOnScroll>
-            
             <div className="max-w-3xl mx-auto px-4 md:min-w-250">
-                <h2 className="text-3xl font-bold mb-8 text-center text-blue-500">
-                    Contact
-                </h2>
+                <RevealOnScroll>
+                    <div className='flex justify-center items-center mb-5'>
+                        <h2 className="text-4xl font-extrabold mb-8 text-center text-blue-500 pb-2 border-b-4 px-5">
+                            Contact
+                        </h2>
+                    </div>
+                </RevealOnScroll>
+                <RevealOnScroll>
                 <div className="flex justify-center space-x-10">
                     <a href='https://www.linkedin.com/in/niek-damink' target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all duration-500' />
@@ -32,9 +35,8 @@ export const Contact = () => {
                         <MdEmail className='text-4xl text-titleText hover:text-blue-400 hover:-translate-y-1 transition-all duration-500' />
                     </a>
                 </div>
+                </RevealOnScroll>
             </div>
-            </RevealOnScroll>
-
         </section>
     )
 

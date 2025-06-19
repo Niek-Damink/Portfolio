@@ -33,9 +33,13 @@ export const About = () => {
 
                 <div className="max-w-3xl mx-auto px-4 md:min-w-250 ">
                     <RevealOnScroll>
-                    <h2 className="text-3xl font-bold mb-8 text-center text-blue-500 ">
-                        About Me
-                    </h2>
+                    <div className='flex justify-center items-center mb-5'>
+                        <h2 className="text-4xl font-extrabold mb-8 text-center text-blue-500 pb-2 border-b-4 px-5">
+                            About Me
+                        </h2>
+                    </div>
+                    </RevealOnScroll>
+                    <RevealOnScroll>
                     <div className="flex md:flex-row flex-col md:space-x-25 space-y-2 mb-10 justify-around items-center">
                         <div className="flex items-center space-x-2 text-lg">
                             <FaMapMarkerAlt className="text-blue-400" />
