@@ -13,7 +13,7 @@ export const RevealOnScroll = ({ children, direction="bottom" }) => {
                 ref.current.classList.remove("visible");
             }
         }, {
-            threshold:0.2, rootMargin: "20px 0px -20px 0px"
+            threshold:0.3, rootMargin: "0px 0px 0px 0px"
         });
         if (ref.current) {
             observer.observe(ref.current)
