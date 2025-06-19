@@ -63,7 +63,7 @@ export const About = () => {
                         </p>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-5">
                             {techStack.map((tech, index) => (
-                                <div key={index} className="flex flex-row items-center p-2 rounded-xl bg-cardBackground hover:bg-primaryText/30 border-2 hover:-translate-y-1 border-cardBackground hover:border-primaryText/10 transition-all duration-500">
+                                <div key={index} className="flex flex-row items-center p-2 rounded-2xl border-3 bg-cardBackground hover:bg-primaryText/20 hover:-translate-y-1 border-titleText/10 hover:border-primaryText/10 transition-all duration-500">
                                     <div className={`p-3 rounded-lg ${tech.bgColor}`}>
                                         <tech.icon className={`text-2xl ${tech.color}`} />
                                     </div>
@@ -97,7 +97,7 @@ export const About = () => {
                     </RevealOnScroll>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-15'>
                         <RevealOnScroll direction='left'>
-                        <div className='p-6 rounded-xl border-titleText/10 border-4 hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-500'>
+                        <div className='p-6 rounded-xl bg-cardBackground border-titleText/10 border-4 hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-500'>
                             <div className='flex items-center space-x-4'>
                                 <FaGraduationCap className="text-blue-400 text-2xl" />
                                 <h3 className='text-xl font-bold text-primaryText transition-all duration-500'>Education</h3>
@@ -132,7 +132,7 @@ export const About = () => {
                         </div> 
                         </RevealOnScroll>
                         <RevealOnScroll direction='right'>
-                        <div className='p-6 rounded-xl border-titleText/10 hover:border-blue-500/30 border-4 hover:-translate-y-1 transition-all duration-500'>
+                        <div className='p-6 rounded-xl bg-cardBackground border-titleText/10 hover:border-blue-500/30 border-4 hover:-translate-y-1 transition-all duration-500'>
                             <div className='flex items-center space-x-4'>
                                 <FaBriefcase className="text-blue-400 text-2xl" />
                                 <h3 className='text-xl font-bold text-primaryText transition-all duration-500'>Work Experience</h3>

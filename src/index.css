@@ -20,14 +20,14 @@ html, body {
   --background: #000;
   --primaryText: #D1D5DB;
   --titleText: #fff;
-  --cardBackground: #1F2937;
+  --cardBackground: #131313;
 }
 
 .light {
   --background: #ececec;
   --primaryText: #1a202c;
   --titleText: #000;
-  --cardBackground: #d6d6d6;
+  --cardBackground: #e7e7e7;
 }
 
 @layer utilities {
