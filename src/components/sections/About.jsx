@@ -11,7 +11,7 @@ const techStack = [
     { icon: FaReact, name: 'React', description: 'JavaScript Library', color:"text-cyan-400", bgColor:"bg-teal-900"},
     { icon: SiDjango, name: 'Django', description: 'Python Web Framework', color: 'text-green-500', bgColor: 'bg-green-900' },
     { icon: SiDash, name: 'Dash', description: 'Python Web Framework', color: 'text-indigo-400', bgColor: 'bg-indigo-900' },
-    { icon: SiTailwindcss, name: 'TailwindCSS', description: 'CSS Framework', color: 'text-teal-400', bgColor: 'bg-teal-900' },
+    { icon: SiTailwindcss, name: 'Tailwind', description: 'CSS Framework', color: 'text-teal-400', bgColor: 'bg-teal-900' },
   ];
 
 const skills = [
@@ -64,7 +64,7 @@ export const About = () => {
                                         <tech.icon className={`text-2xl ${tech.color}`} />
                                     </div>
                                     <div className="flex flex-col px-3">
-                                        <h4 className="text-titleText font-bold text-md transition-all duration-500">{tech.name}</h4>
+                                        <h4 className="text-titleText/80 font-bold text-md transition-all duration-500">{tech.name}</h4>
                                         <p className="text-primaryText/40 font-semibold text-xs transition-all duration-500">{tech.description}</p>
                                     </div>
                                 </div>
