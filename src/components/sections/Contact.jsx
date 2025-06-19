@@ -1,5 +1,6 @@
 import { FaWhatsapp, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import { RevealOnScroll } from '../RevealOnScroll';
 
 
 export const Contact = () => {
@@ -8,6 +9,8 @@ export const Contact = () => {
             id="contact"
             className="flex justify-center py-20"
         >
+            <RevealOnScroll>
+            
             <div className="max-w-3xl mx-auto px-4 md:min-w-250">
                 <h2 className="text-3xl font-bold mb-8 text-center text-blue-500">
                     Contact
@@ -30,6 +33,7 @@ export const Contact = () => {
                     </a>
                 </div>
             </div>
+            </RevealOnScroll>
 
         </section>
     )

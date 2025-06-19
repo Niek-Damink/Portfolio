@@ -1,4 +1,5 @@
 import { FaYoutube, FaGithub, FaBookOpen, FaGlobe} from 'react-icons/fa';
+import { RevealOnScroll } from '../RevealOnScroll';
 
 const projects = [
     {title: "MerlinRoads", technologies:["Python", "Dash", "Dash Sylvereye", "SUMO", "HERE/TomTom/Maps APIs"], links:[{icon:FaGithub, link:"https://github.com/J-a-c-c-o/MerlinRoads", name:"Github"}, {icon:FaYoutube, link:"https://youtu.be/WXPFHcs8VAs", name:"Overview"}], description:"MerlinRoads is an interactive dashboard for visualizing and analyzing car accident data on urban road networks. It combines real-time and historical data with features like map filtering, SUMO-based traffic simulation, and visual analytics to support data-driven decisions."},
@@ -14,11 +15,14 @@ export const Projects = () => {
             id="projects"
             className="min-h-screen flex items-center justify-center py-20">
             <div className="max-w-5xl mx-auto px-4">
+                <RevealOnScroll>
                 <h2 className="text-3xl font-bold mb-8 text-center text-blue-500">
                     Projects
                 </h2>
+                </RevealOnScroll>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {projects.map((project, key) => (
+                    <RevealOnScroll direction={key % 2 === 0 ? 'left' : 'right'}>
                         <div key={key} className="p-6 rounded-xl border-4 border-titleText/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-500">
                             <h3 className="text-xl font-bold mb-2 text-blue-500"> {project.title} </h3>
                             <p className="text-primaryText transition-all duration-500"> {project.description}</p>
@@ -44,13 +48,10 @@ export const Projects = () => {
                             ))}
                             </div>
                         </div> 
+                    </RevealOnScroll>
                     ))}
-                    
-
                 </div>
-
             </div>
-
         </section>
     );
 }

@@ -1,11 +1,13 @@
 import logo from '../../assets/Niek_Damink.png';
 import { FaDownload } from 'react-icons/fa';
+import { RevealOnScroll } from '../RevealOnScroll';
 
 export const Home = () => {
     return <section 
                 id="home" 
                 className="min-h-screen flex items-center justify-center relative"
             >
+                <RevealOnScroll>
                 <div className="text-center z-10 px-4 flex flex-col justify-center items-center">
                     <img src={logo} alt="Logo" className="w-70 h-70" />
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
@@ -27,6 +29,7 @@ export const Home = () => {
                         </a>
                     </div>
                 </div>
+                </RevealOnScroll>
 
         </section>
 }

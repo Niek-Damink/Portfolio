@@ -45,4 +45,30 @@ html, body {
   .animate-blink {
     animation: blink 0.8s step-end infinite;
   }
+
+  .reveal {
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .reveal-left {
+    transform: translateX(-100px)
+  }
+
+  .reveal-right {
+    transform: translateX(100px)
+  }
+
+  .reveal-top {
+    transform: translateY(-30px)
+  }
+
+  .reveal-bottom {
+    transform: translateY(30px)
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

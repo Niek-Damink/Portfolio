@@ -1,0 +1,31 @@
+import { useEffect, useRef } from "react";
+
+export const RevealOnScroll = ({ children, direction="bottom" }) => {
+
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                ref.current.classList.add("visible");
+            }
+            else {
+                ref.current.classList.remove("visible");
+            }
+        }, {
+            threshold:0.2, rootMargin: "20px 0px -20px 0px"
+        });
+        if (ref.current) {
+            observer.observe(ref.current)
+        }
+        
+        return () => observer.disconnect();
+    },[])
+
+    return (
+        <div ref={ref} className={`reveal reveal-${direction}`}>
+            {children}
+        </div>
+    )
+
+}
