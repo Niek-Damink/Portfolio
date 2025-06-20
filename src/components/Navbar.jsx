@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { HiSun, HiMoon } from "react-icons/hi";
+import { LightDarkButton } from "./LightDarkButton";
 
 export const Navbar = ({menuOpen, setMenuOpen, isDark, setIsDark}) => {
 
@@ -49,21 +49,7 @@ export const Navbar = ({menuOpen, setMenuOpen, isDark, setIsDark}) => {
                         >
                             &#9776;
                         </div>
-                        <a 
-                            className={`border-2 ${isDark ? "border-blue-900  hover:border-blue-500 text-blue-600 hover:text-blue-400" : "border-yellow-300 hover:border-yellow-200 text-yellow-500 hover:text-yellow-300"} p-2 rounded-xl`}
-                            onClick={() => {
-                                setIsDark((prev) => !prev);
-                                document.documentElement.classList.toggle("light");
-                            }}
-                        >
-                            {
-                                isDark ? (
-                                    <HiMoon className="text-2xl hover:cursor-pointer"/>
-                                ) : (
-                                    <HiSun className="text-2xl hover:cursor-pointer"/>
-                                )
-                            }
-                        </a>
+                        <LightDarkButton isDark={isDark} setIsDark={setIsDark}/>
                     </div>
                 </div>
             </div>
