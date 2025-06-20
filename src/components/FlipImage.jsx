@@ -1,10 +1,8 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
-export const FlipImage = ({src1, src2, className}) => {
+export const FlipImage = ({src1, src2}) => {
 
     const [isFlipped, setFlipped] = useState(false);
-
-
 
     return (
         <div className="w-60 md:w-70 h-60 md:h-70 mb-10 relative">
