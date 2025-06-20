@@ -107,7 +107,7 @@ export const About = () => {
                                     <h4 className='text-blue-500 text-lg font-bold mb-1'>Master Computer Science</h4>
                                     <div className='flex items-center space-x-2'>
                                         <FaCalendarAlt className='text-blue-300'/>
-                                        <p className='text-blue-300 font-medium mb-1'>2025 - Present</p>
+                                        <p className='text-blue-300 font-medium mb-1'>Sep 2025 - Present</p>
                                     </div>
                                     <div className='flex items-center space-x-2'>
                                         <FaMapMarkerAlt className='text-blue-300'/>
@@ -120,7 +120,7 @@ export const About = () => {
                                     <h4 className='text-blue-500 text-lg font-bold mb-1'>Bachelor Technical Computer Science</h4>
                                     <div className='flex items-center space-x-2'>
                                         <FaCalendarAlt className='text-blue-300'/>
-                                        <p className='text-blue-300 font-medium mb-1'>2022 - 2025</p>
+                                        <p className='text-blue-300 font-medium mb-1'>Sep 2022 - Jul 2025</p>
                                     </div>
                                     <div className='flex items-center space-x-2'>
                                         <FaMapMarkerAlt className='text-blue-300'/>
