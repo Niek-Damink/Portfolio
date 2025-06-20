@@ -1,6 +1,8 @@
 import logo from '../../assets/Niek_Damink.png';
+import logo2 from '../../assets/Niek_Round.jpg';
 import { FaDownload } from 'react-icons/fa';
 import { RevealOnScroll } from '../RevealOnScroll';
+import { FlipImage } from '../FlipImage';
 
 export const Home = () => {
     return <section 
@@ -9,11 +11,7 @@ export const Home = () => {
             >
                 <RevealOnScroll>
                 <div className="text-center z-10 px-4 flex flex-col justify-center items-center">
-                    <img 
-                        src={logo} 
-                        alt="Logo" 
-                        className="w-60 md:w-70 h-60 md:h-70 mb-5  hover:scale-105 drop-shadow-xl drop-shadow-blue-500/30 hover:drop-shadow-blue-500/70 " 
-                    />
+                    <FlipImage src1={logo} src2={logo2}/>
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
                         Hi, I'm Niek Damink
                     </h1>
