@@ -87,7 +87,7 @@ export const About = () => {
                             {skills.map((skill, key) => (
                                 <span
                                     key={key}
-                                    className='bg-blue-500/20 text-blue-500 py-1 px-3 rounded-full text-md hover:bg-blue-500/30 hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition'
+                                    className='bg-blue-500/20 text-blue-500 py-1 px-3 rounded-full text-md hover:bg-blue-500/30 hover:-translate-y-1 transition-all duration-300'
                                 >
                                     {skill}
                                 </span>
@@ -98,7 +98,7 @@ export const About = () => {
                     </RevealOnScroll>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-15'>
                         <RevealOnScroll direction='left'>
-                        <div className='p-6 rounded-xl bg-cardBackground border-titleText/10 border-4 hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-500'>
+                        <div className='p-6 rounded-xl bg-cardBackground border-titleText/10 border-4 hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-500 shadow-xl shadow-blue-500/20 hover:shadow-blue-500/40'>
                             <div className='flex items-center space-x-4'>
                                 <FaGraduationCap className="text-blue-400 text-2xl" />
                                 <h3 className='text-xl font-bold text-primaryText transition-all duration-500'>Education</h3>
@@ -110,7 +110,7 @@ export const About = () => {
                         </div> 
                         </RevealOnScroll>
                         <RevealOnScroll direction='right'>
-                        <div className='p-6 rounded-xl bg-cardBackground border-titleText/10 hover:border-blue-500/30 border-4 hover:-translate-y-1 transition-all duration-500'>
+                        <div className='p-6 rounded-xl bg-cardBackground border-titleText/10 hover:border-blue-500/30 border-4 hover:-translate-y-1 transition-all duration-500 shadow-xl shadow-blue-500/20 hover:shadow-blue-500/40'>
                             <div className='flex items-center space-x-4'>
                                 <FaBriefcase className="text-blue-400 text-2xl" />
                                 <h3 className='text-xl font-bold text-primaryText transition-all duration-500'>Work Experience</h3>

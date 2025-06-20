@@ -25,7 +25,7 @@ export const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, key) => (
                     <RevealOnScroll direction={key % 2 === 0 ? 'left' : 'right'}>
-                        <div key={key} className="p-6 rounded-xl border-4 bg-cardBackground border-titleText/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-500">
+                        <div key={key} className="p-6 rounded-xl border-4 bg-cardBackground border-titleText/10 hover:-translate-y-1 hover:border-blue-500/30 shadow-xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-500">
                             <h3 className="text-xl font-bold mb-2 text-blue-500"> {project.title} </h3>
                             <p className="text-primaryText transition-all duration-500"> {project.description}</p>
                             <div className='flex flex-wrap gap-3 my-4'>
