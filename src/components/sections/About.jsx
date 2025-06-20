@@ -2,6 +2,7 @@ import { FaMapMarkerAlt, FaUser, FaGraduationCap, FaBriefcase, FaReact, FaJava, 
 import { SiTailwindcss, SiDash, SiDjango, SiJavascript} from 'react-icons/si';
 import { DiPython} from 'react-icons/di';
 import { RevealOnScroll } from '../RevealOnScroll';
+import { ExperienceItem } from '../ExperienceItem';
 
 const techStack = [
     { icon: FaJava, name: 'Java', description: 'Backend Development', color: "text-blue-200", bgColor: "bg-cyan-900" },
@@ -103,31 +104,8 @@ export const About = () => {
                                 <h3 className='text-xl font-bold text-primaryText transition-all duration-500'>Education</h3>
                             </div>
                             <ul className="space-y-6 text-gray-300 my-2">
-                                <li>
-                                    <h4 className='text-blue-500 text-lg font-bold mb-1'>Master Computer Science</h4>
-                                    <div className='flex items-center space-x-2'>
-                                        <FaCalendarAlt className='text-blue-300'/>
-                                        <p className='text-blue-300 font-medium mb-1'>Sep 2025 - Present</p>
-                                    </div>
-                                    <div className='flex items-center space-x-2'>
-                                        <FaMapMarkerAlt className='text-blue-300'/>
-                                        <p className='text-blue-300 font-medium mb-1'>University of Twente</p>
-                                    </div>
-                                    <p className='text-primaryText transition-all duration-500'>I am currently in my first year of the Master Computer Science, specializing in Software Technology and Formal Methods.</p>
-                                </li>
-
-                                <li>
-                                    <h4 className='text-blue-500 text-lg font-bold mb-1'>Bachelor Technical Computer Science</h4>
-                                    <div className='flex items-center space-x-2'>
-                                        <FaCalendarAlt className='text-blue-300'/>
-                                        <p className='text-blue-300 font-medium mb-1'>Sep 2022 - Jul 2025</p>
-                                    </div>
-                                    <div className='flex items-center space-x-2'>
-                                        <FaMapMarkerAlt className='text-blue-300'/>
-                                        <p className='text-blue-300 font-medium mb-1'>University of Twente</p>
-                                    </div>
-                                    <p className='text-primaryText transition-all duration-500'>I graduated Cum Laude with a strong foundation in algorithms, data structures, OOP, and web development.</p>
-                                </li>
+                                <ExperienceItem title="Master Computer Science" date="Sep 2025 - Present" location="University of Twente" description="I am currently in my first year of the Master Computer Science, specializing in Software Technology and Formal Methods." />
+                                <ExperienceItem title="Bachelor Technical Computer Science" date="Sep 2022 - Jul 2025" location="University of Twente" description="I graduated Cum Laude with a strong foundation in algorithms, data structures, OOP, and web development." />
                             </ul>
                         </div> 
                         </RevealOnScroll>
@@ -138,30 +116,8 @@ export const About = () => {
                                 <h3 className='text-xl font-bold text-primaryText transition-all duration-500'>Work Experience</h3>
                             </div>
                             <ul className="space-y-6 text-gray-300 my-2">
-                                <li>
-                                    <h4 className='text-blue-500 text-lg font-bold mb-1'>Teaching Assistant</h4>
-                                    <div className='flex items-center space-x-2'>
-                                        <FaCalendarAlt className='text-blue-300'/>
-                                        <p className='text-blue-300 font-medium mb-1'>Sep 2023 - Present</p>
-                                    </div>
-                                    <div className='flex items-center space-x-2'>
-                                        <FaMapMarkerAlt className='text-blue-300'/>
-                                        <p className='text-blue-300 font-medium mb-1'>University of Twente</p>
-                                    </div>
-                                    <p className='text-primaryText transition-all duration-500'>I assist students by clarifying course material, mentoring, guiding assignments, grading tests, and reviewing submissions.</p>
-                                </li>
-                                <li>
-                                    <h4 className='text-blue-500 text-lg font-bold mb-1'>Stock Clerk</h4>
-                                    <div className='flex items-center space-x-2'>
-                                        <FaCalendarAlt className='text-blue-300'/>
-                                        <p className='text-blue-300 font-medium mb-1'>Dec 2019 - Juli 2023</p>
-                                    </div>
-                                    <div className='flex items-center space-x-2'>
-                                        <FaMapMarkerAlt className='text-blue-300'/>
-                                        <p className='text-blue-300 font-medium mb-1'>Albert Heijn</p>
-                                    </div>
-                                    <p className='text-primaryText transition-all duration-500'>As a Stock Clerk, my main responsibility was restocking shelves. I also handled incoming shipments and sorted them</p>
-                                </li>
+                                <ExperienceItem title="Teaching Assistant" date="Sep 2023 - Present" location="University of Twente" description="I assist students by clarifying course material, mentoring, guiding assignments, grading tests, and reviewing submissions." />
+                                <ExperienceItem title="Stock Clerk" date="Dec 2019 - Juli 2023" location="Albert Heijn" description="As a Stock Clerk, my main responsibility was restocking shelves. I also handled incoming shipments and sorted them"  />
                             </ul>
                         </div> 
                         </RevealOnScroll>
