@@ -7,8 +7,8 @@ export const FlipImage = ({src1, src2, className}) => {
 
 
     return (
-        <div className="w-50 md:w-60 h-50 md:h-60 mb-10 relative">
-            <div className="hover:scale-105 drop-shadow-xl drop-shadow-blue-500/30 hover:drop-shadow-blue-500/70">
+        <div className="w-60 md:w-70 h-60 md:h-70 mb-10 relative">
+            <div className="drop-shadow-xl drop-shadow-blue-500/30 hover:drop-shadow-blue-500/70">
                 <img 
                     src={src1} 
                     alt="Logo" 
