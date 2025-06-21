@@ -43,18 +43,33 @@ export const About = () => {
                     </div>
                     </RevealOnScroll>
                     <RevealOnScroll>
-                    <div className="flex md:flex-row flex-col md:space-x-25 space-y-2 mb-10 justify-around items-center">
+                    <div className="flex md:flex-row flex-col md:space-x-20 space-y-2 mb-10 justify-around items-center">
                         <div className="flex items-center space-x-3">
-                            <FaMapMarkerAlt className="text-blue-500 text-2xl" />
-                            <span className='text-primaryText font-bold transition-all duration-500 text-lg'>Oldenzaal, Netherlands</span>
+                            <div className='bg-blue-500/20 rounded-full w-16 h-16 flex items-center justify-center'>
+                                <FaMapMarkerAlt className="text-blue-500 text-2xl" />
+                            </div>
+                            <div className='flex flex-col'>
+                                <p className='text-titleText/50 font-semibold transition-all duration-500 text-sm' > Location </p>
+                                <p className='text-primaryText font-bold transition-all duration-500 text-md'>Oldenzaal, <br/> The Netherlands</p>
+                            </div>
                         </div>
                         <div className="flex items-center space-x-3">
-                            <FaUser className="text-blue-500 text-2xl" />
-                            <span className='text-primaryText font-bold transition-all duration-500 text-lg'>20 years old</span>
+                            <div className='bg-blue-500/20 rounded-full w-16 h-16 flex items-center justify-center'>
+                                <FaUser className="text-blue-500 text-2xl" />
+                            </div>
+                            <div className='flex flex-col'>
+                                <p className='text-titleText/50 font-semibold transition-all duration-500 text-sm'> Age </p>
+                                <p className='text-primaryText font-bold transition-all duration-500 text-md'>Twenty <br/> Years Old</p>
+                            </div>
                         </div>
-                        <div className="flex items-center space-x-3 text-lg">
-                            <FaGraduationCap className="text-blue-500 text-3xl" />
-                            <span className='text-primaryText font-bold transition-all duration-500 text-lg'>Masters TCS student</span>
+                        <div className="flex items-center space-x-3">
+                            <div className='bg-blue-500/20 rounded-full w-16 h-16 flex items-center justify-center'>
+                                <FaGraduationCap className="text-blue-500 text-3xl" />
+                            </div>
+                            <div>
+                                <p className='text-titleText/50 font-semibold transition-all duration-500 text-sm'> Study </p>
+                                <p className='text-primaryText font-bold transition-all duration-500 text-md'>Master's in <br/> Computer Science</p>
+                            </div>
                         </div>
                     </div>
                     </RevealOnScroll>
