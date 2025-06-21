@@ -17,10 +17,10 @@ html, body {
 }
 
 :root {
-  --background: #000;
+  --background: #101010;
   --primaryText: #D1D5DB;
   --titleText: #fff;
-  --cardBackground: #131313;
+  --cardBackground: #1f1f1f;
 }
 
 .light {
