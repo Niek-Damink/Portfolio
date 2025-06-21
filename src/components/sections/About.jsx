@@ -17,13 +17,14 @@ const techStack = [
   ];
 
 const skills = [
-    "Git",
+    "REST API's",
     "Scrum",
     "Sprint Planning",
+    "Object Oriented Programming",
+    "Git",
     "Data Analysis",
     "Problem Solving",
-    "Object Oriented Programming",
-    "REST API's",
+
 ]
 
 export const About = () => {
@@ -43,17 +44,17 @@ export const About = () => {
                     </RevealOnScroll>
                     <RevealOnScroll>
                     <div className="flex md:flex-row flex-col md:space-x-25 space-y-2 mb-10 justify-around items-center">
-                        <div className="flex items-center space-x-2 text-lg">
-                            <FaMapMarkerAlt className="text-blue-400" />
-                            <span className='text-primaryText font-bold transition-all duration-500'>Oldenzaal, Netherlands</span>
+                        <div className="flex items-center space-x-3">
+                            <FaMapMarkerAlt className="text-blue-500 text-2xl" />
+                            <span className='text-primaryText font-bold transition-all duration-500 text-lg'>Oldenzaal, Netherlands</span>
                         </div>
-                        <div className="flex items-center space-x-2 text-lg">
-                            <FaUser className="text-blue-400" />
-                            <span className='text-primaryText font-bold transition-all duration-500'>20 years old</span>
+                        <div className="flex items-center space-x-3">
+                            <FaUser className="text-blue-500 text-2xl" />
+                            <span className='text-primaryText font-bold transition-all duration-500 text-lg'>20 years old</span>
                         </div>
-                        <div className="flex items-center space-x-2 text-lg">
-                            <FaGraduationCap className="text-blue-400" />
-                            <span className='text-primaryText font-bold transition-all duration-500'>Masters TCS student</span>
+                        <div className="flex items-center space-x-3 text-lg">
+                            <FaGraduationCap className="text-blue-500 text-3xl" />
+                            <span className='text-primaryText font-bold transition-all duration-500 text-lg'>Masters TCS student</span>
                         </div>
                     </div>
                     </RevealOnScroll>
@@ -98,7 +99,7 @@ export const About = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='flex flex-wrap gap-3 my-4'>
+                        <div className='flex flex-wrap gap-3 my-4 justify-center'>
                             {skills.map((skill, key) => (
                                 <span
                                     key={key}
