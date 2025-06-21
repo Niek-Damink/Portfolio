@@ -16,7 +16,7 @@ export const Home = () => {
                         Hi, I'm Niek Damink
                     </h1>
                     <p className="text-lg text-primaryText mb-8 max-w-lg mx-auto transition-all duration-500">
-                        I am a <span className='text-blue-500 font-bold'>Master's student</span> in Computer Science and a passionate <span className='text-blue-500 font-bold'>Web Developer</span>
+                        I am a <span className='text-blue-500 font-bold'>Master's Student</span> in Computer Science and a passionate <span className='text-blue-500 font-bold'>Software Developer</span>
                     </p>
                     <div className="flex justify-center gap-4 hover:gap-8 transition-all duration-500">
                         <a href="#about" className="bg-blue-500/30 hidden md:flex text-blue-500 py-3 px-6 rounded-l-full font-medium transition items-center justify-center  relative overflow-hidden hover:-translate-y-0.5 drop-shadow-xl drop-shadow-blue-500/30 hover:drop-shadow-blue-500/80">

@@ -2,10 +2,27 @@ import { FaYoutube, FaGithub, FaBookOpen, FaGlobe} from 'react-icons/fa';
 import { RevealOnScroll } from '../RevealOnScroll';
 
 const projects = [
-    {title: "MerlinRoads", technologies:["Python", "Dash", "Dash Sylvereye", "SUMO", "HERE/TomTom/Maps APIs"], links:[{icon:FaGithub, link:"https://github.com/J-a-c-c-o/MerlinRoads", name:"Github"}, {icon:FaYoutube, link:"https://youtu.be/WXPFHcs8VAs", name:"Overview"}], description:"MerlinRoads is an interactive dashboard for visualizing and analyzing car accident data on urban road networks. It combines real-time and historical data with features like map filtering, SUMO-based traffic simulation, and visual analytics to support data-driven decisions."},
-    {title: "LBC Task Scheduling Heuristic", technologies:["Python", "R", "IGraph", "Jupyter Notebook", "Data Visualization"], links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/LBC_TaskSched", name:"Github"}, {icon:FaBookOpen, link:"/Research_Project_Paper.pdf", name:"Read"}], description:"This project, developed as part of my thesis, introduces task scheduling heuristics based on Longest Betweenness Centrality to improve efficiency in distributed systems. The heuristics are evaluated against established methods using synthetic task graphs."},
-    {title: "PokerPals", technologies:["Django", "TailwindCSS", "Python", "JavaScript"], links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/PokerPals", name:"Github"}, {icon:FaGlobe, link:"https://pokerpals.nl", name:"Visit"}], description:"PokerPals is a poker statistics website built for my friend group. It features player accounts, team chats, and awards like most wins or losses. It also tracks game history, detailed player stats, and total earnings across all sessions."},
-    {title: "Portofolio", technologies:["React", "TailwindCSS", "JavaScript"], links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/portofolio", name:"Github"}, {icon:FaGlobe, link:"https://niekdamink.com", name:"Visit"}], description:"This website serves as my personal portfolio, where I share a selection of projects I have worked on, along with an overview of the skills I have developed and the experiences I have gained through various learning and work opportunities."}
+    {
+        title: "MerlinRoads", 
+        technologies:["Python", "Dash", "Dash Sylvereye", "SUMO", "HERE/TomTom/Maps APIs"], 
+        links:[{icon:FaGithub, link:"https://github.com/J-a-c-c-o/MerlinRoads", name:"Github"}, {icon:FaYoutube, link:"https://youtu.be/WXPFHcs8VAs", name:"Overview"}], 
+        description:"MerlinRoads is an interactive dashboard for visualizing and analyzing road incident data on urban road networks. It combines real-time and historical data with features like map filtering, SUMO-based traffic simulation, and visual analytics to support data-driven decisions."
+    }, {
+        title: "LBC Task Scheduling Heuristic", 
+        technologies:["Python", "R", "IGraph", "Jupyter Notebook", "Data Visualization"], 
+        links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/LBC_TaskSched", name:"Github"}, {icon:FaBookOpen, link:"/Research_Project_Paper.pdf", name:"Read"}], 
+        description:"This project, developed as part of my thesis, introduces task scheduling heuristics based on Longest Betweenness Centrality to improve efficiency in distributed systems. The heuristics are evaluated against established methods using synthetic task graphs."
+    }, {
+        title: "PokerPals", 
+        technologies:["Django", "TailwindCSS", "Python", "JavaScript"], 
+        links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/PokerPals", name:"Github"}, {icon:FaGlobe, link:"https://pokerpals.nl", name:"Visit"}], 
+        description:"PokerPals is a poker statistics website built for my friend group. It features player accounts, team chats, and awards like most wins or losses. It also tracks game history, detailed player stats, and total earnings across all sessions."
+    }, {
+        title: "Portofolio", 
+        technologies:["React", "TailwindCSS", "JavaScript"], 
+        links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/portofolio", name:"Github"}, {icon:FaGlobe, link:"https://niekdamink.com", name:"Visit"}], 
+        description:"This website serves as my personal portfolio, where I share a selection of projects I have worked on, along with an overview of the skills I have developed and the experiences I have gained through various learning and work opportunities."
+    }
 ]
 
 export const Projects = () => {
