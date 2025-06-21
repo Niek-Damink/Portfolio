@@ -4,9 +4,9 @@ export const LightDarkButton = ({ isDark, setIsDark }) => {
     
     return (
         <a 
-            className={`border-2 p-2 rounded-xl relative overflow-hidden hover:cursor-pointer w-10 h-10 transition-all duration-500
-                ${isDark ? "border-blue-900  hover:border-blue-500" 
-                         : "border-yellow-300 hover:border-yellow-200"}`}
+            className={`border-2 p-2 border-titleText/10 rounded-xl relative overflow-hidden hover:cursor-pointer w-10 h-10 transition-all duration-500 bg-cardBackground
+                ${isDark ? "hover:border-blue-500" 
+                         : "hover:border-yellow-200"}`}
             onClick={() => {
                 setIsDark((prev) => !prev);
                 document.documentElement.classList.toggle("light");
