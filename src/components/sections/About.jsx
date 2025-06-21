@@ -1,8 +1,9 @@
-import { FaMapMarkerAlt, FaUser, FaGraduationCap, FaBriefcase, FaReact, FaJava, FaDatabase, FaCalendarAlt} from 'react-icons/fa';
+import { FaMapMarkerAlt, FaUser, FaGraduationCap, FaBriefcase, FaReact, FaJava, FaDatabase, FaTools, FaCode} from 'react-icons/fa';
 import { SiTailwindcss, SiDash, SiDjango, SiJavascript} from 'react-icons/si';
 import { DiPython} from 'react-icons/di';
 import { RevealOnScroll } from '../RevealOnScroll';
 import { ExperienceItem } from '../ExperienceItem';
+import { Card } from "../Card";
 
 const techStack = [
     { icon: FaJava, name: 'Java', description: 'Backend Development', color: "text-blue-200", bgColor: "bg-cyan-900" },
@@ -57,11 +58,18 @@ export const About = () => {
                     </div>
                     </RevealOnScroll>
                     <RevealOnScroll>
-                    <div className='mb-1 mt-5'>
-                        <h3 className="text-titleText text-2xl font-bold transition-all duration-500">Technologies</h3>
-                        <p className='text-primaryText text-md mt-1 transition-all duration-500'>
-                            I am proficient in range of modern technologies. These are some of the main technologies I have worked with.
-                        </p>
+                    <div className='mb-15 mt-15'>
+                        <div className='flex items-center space-x-5'>
+                            <div className='rounded-full p-4 bg-green-500/10'>
+                                <FaCode className='text-3xl text-green-500/50' />
+                            </div>
+                            <div>
+                                <h3 className="text-titleText text-2xl font-bold transition-all duration-500">Technologies</h3>
+                                <p className='text-primaryText text-md mt-1 transition-all duration-500'>
+                                    I am proficient in range of modern technologies. These are some of the main technologies I have worked with.
+                                </p>
+                            </div>
+                        </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-5">
                             {techStack.map((tech, index) => (
                                 <div key={index} className="flex flex-row items-center p-2 rounded-2xl border-3 bg-cardBackground hover:bg-primaryText/20 hover:-translate-y-1 border-titleText/10 hover:border-primaryText/10 transition-all duration-500">
@@ -79,10 +87,17 @@ export const About = () => {
                     </RevealOnScroll>
                     <RevealOnScroll>
                     <div className='mt-15'>
-                        <h3 className="text-titleText text-2xl font-bold transition-all duration-500">Skills</h3>
-                        <p className='text-primaryText text-md mb-2 mt-1 transition-all duration-500'>
-                            Through working on team projects for real clients, I have developed these key skills that help me contribute effectively in collaborative and professional environments.
-                        </p>
+                        <div className='flex items-center space-x-5'>
+                            <div className='rounded-full p-4 bg-blue-500/20'>
+                                <FaTools className='text-3xl text-blue-500/50' />
+                            </div>
+                            <div>
+                                <h3 className="text-titleText text-2xl font-bold transition-all duration-500">Skills</h3>
+                                <p className='text-primaryText text-md mb-2 mt-1 transition-all duration-500'>
+                                    Through working on team projects for real clients, I have developed these key skills that help me contribute effectively in collaborative and professional environments.
+                                </p>
+                            </div>
+                        </div>
                         <div className='flex flex-wrap gap-3 my-4'>
                             {skills.map((skill, key) => (
                                 <span
@@ -98,28 +113,28 @@ export const About = () => {
                     </RevealOnScroll>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-15'>
                         <RevealOnScroll direction='left'>
-                        <div className='p-6 rounded-xl bg-cardBackground border-titleText/10 border-4 hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-500 shadow-xl shadow-blue-500/20 hover:shadow-blue-500/40'>
-                            <div className='flex items-center space-x-4'>
-                                <FaGraduationCap className="text-blue-400 text-2xl" />
-                                <h3 className='text-xl font-bold text-primaryText transition-all duration-500'>Education</h3>
-                            </div>
-                            <ul className="space-y-6 text-gray-300 my-2">
-                                <ExperienceItem title="Master Computer Science" date="Sep 2025 - Present" location="University of Twente" description="I am currently in my first year of the Master Computer Science, specializing in Software Technology and Formal Methods." />
-                                <ExperienceItem title="Bachelor Technical Computer Science" date="Sep 2022 - Jul 2025" location="University of Twente" description="I graduated Cum Laude with a strong foundation in algorithms, data structures, OOP, and web development." />
-                            </ul>
-                        </div> 
+                            <Card>
+                                <div className='flex items-center space-x-4'>
+                                    <FaGraduationCap className="text-blue-400 text-2xl" />
+                                    <h3 className='text-xl font-bold text-primaryText transition-all duration-500'>Education</h3>
+                                </div>
+                                <ul className="space-y-6 text-gray-300 my-2">
+                                    <ExperienceItem title="Master Computer Science" date="Sep 2025 - Present" location="University of Twente" description="I am currently in my first year of the Master Computer Science, specializing in Software Technology and Formal Methods." />
+                                    <ExperienceItem title="Bachelor Technical Computer Science" date="Sep 2022 - Jul 2025" location="University of Twente" description="I graduated Cum Laude with a strong foundation in algorithms, data structures, OOP, and web development." />
+                                </ul>
+                            </Card>
                         </RevealOnScroll>
                         <RevealOnScroll direction='right'>
-                        <div className='p-6 rounded-xl bg-cardBackground border-titleText/10 hover:border-blue-500/30 border-4 hover:-translate-y-1 transition-all duration-500 shadow-xl shadow-blue-500/20 hover:shadow-blue-500/40'>
-                            <div className='flex items-center space-x-4'>
-                                <FaBriefcase className="text-blue-400 text-2xl" />
-                                <h3 className='text-xl font-bold text-primaryText transition-all duration-500'>Work Experience</h3>
-                            </div>
-                            <ul className="space-y-6 text-gray-300 my-2">
-                                <ExperienceItem title="Teaching Assistant" date="Sep 2023 - Present" location="University of Twente" description="I assist students by clarifying course material, mentoring, guiding assignments, grading tests, and reviewing submissions." />
-                                <ExperienceItem title="Stock Clerk" date="Dec 2019 - Juli 2023" location="Albert Heijn" description="As a Stock Clerk, my main responsibility was restocking shelves. I also handled incoming shipments and sorted them"  />
-                            </ul>
-                        </div> 
+                            <Card>
+                                <div className='flex items-center space-x-4'>
+                                    <FaBriefcase className="text-blue-400 text-2xl" />
+                                    <h3 className='text-xl font-bold text-primaryText transition-all duration-500'>Work Experience</h3>
+                                </div>
+                                <ul className="space-y-6 text-gray-300 my-2">
+                                    <ExperienceItem title="Teaching Assistant" date="Sep 2023 - Present" location="University of Twente" description="I assist students by clarifying course material, mentoring, guiding assignments, grading tests, and reviewing submissions." />
+                                    <ExperienceItem title="Stock Clerk" date="Dec 2019 - Juli 2023" location="Albert Heijn" description="As a Stock Clerk, my main responsibility was restocking shelves. I also handled incoming shipments and sorted them"  />
+                                </ul>
+                            </Card>
                         </RevealOnScroll>
                     </div>
 

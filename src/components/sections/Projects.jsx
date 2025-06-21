@@ -1,5 +1,6 @@
 import { FaYoutube, FaGithub, FaBookOpen, FaGlobe} from 'react-icons/fa';
 import { RevealOnScroll } from '../RevealOnScroll';
+import { Card } from "../Card";
 
 const projects = [
     {
@@ -41,8 +42,8 @@ export const Projects = () => {
                 </RevealOnScroll>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, key) => (
-                    <RevealOnScroll direction={key % 2 === 0 ? 'left' : 'right'}>
-                        <div key={key} className="p-6 rounded-xl border-4 bg-cardBackground border-titleText/10 hover:-translate-y-1 hover:border-blue-500/30 shadow-xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-500">
+                    <RevealOnScroll key={key} direction={key % 2 === 0 ? 'left' : 'right'}>
+                        <Card>
                             <h3 className="text-xl font-bold mb-2 text-blue-500"> {project.title} </h3>
                             <p className="text-primaryText transition-all duration-500"> {project.description}</p>
                             <div className='flex flex-wrap gap-3 my-4'>
@@ -66,7 +67,7 @@ export const Projects = () => {
                                 </a>
                             ))}
                             </div>
-                        </div> 
+                        </Card>
                     </RevealOnScroll>
                     ))}
                 </div>
