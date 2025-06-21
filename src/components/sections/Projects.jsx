@@ -62,8 +62,8 @@ export const Projects = () => {
                                     rel="noreferrer" 
                                     className='text-primaryText hover:text-blue-400 flex flex-col transition-all hover:-translate-y-1 items-center'
                                 >
-                                    <link.icon className='text-3xl' />
-                                    <p className='text-center mt-1 font-bold'>{link.name}</p>
+                                    <link.icon className='text-3xl transition-all duration-500' />
+                                    <p className='text-center mt-1 font-bold transition-all duration-500'>{link.name}</p>
                                 </a>
                             ))}
                             </div>
