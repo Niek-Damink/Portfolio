@@ -71,6 +71,18 @@ export const Projects = () => {
                     </RevealOnScroll>
                     ))}
                 </div>
+                <RevealOnScroll>
+                    <div className='flex justify-center mt-10'>
+                        <a 
+                            href="https://github.com/Niek-Damink"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="bg-blue-500/30 flex text-blue-500 py-3 text-lg px-6 rounded-full font-medium transition items-center justify-center  hover:-translate-y-0.5 drop-shadow-xl drop-shadow-blue-500/30 hover:drop-shadow-blue-500/80"
+                        >
+                            Explore My Github
+                        </a>
+                    </div>
+                </RevealOnScroll>
             </div>
         </section>
     );
