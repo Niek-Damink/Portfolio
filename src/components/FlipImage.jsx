@@ -17,7 +17,7 @@ export const FlipImage = ({src1, src2}) => {
                 <img 
                     src={src2} 
                     alt="Logo" 
-                    className={`hover:cursor-pointer backface-hidden transition-all duration-1500 absolute border-4 border-gray-900 rounded-full
+                    className={`hover:cursor-pointer backface-hidden transition-all duration-1500 absolute border-4 border-titleText/10 rounded-full
                                 ${isFlipped ? "rotate-y-0" : "rotate-y-180"}`}
                     onClick={() => setFlipped(false)}
                 />
