@@ -14,6 +14,7 @@ html, body {
   --color-primaryText: var(--primaryText);
   --color-titleText: var(--titleText);
   --color-cardBackground: var(--cardBackground);
+  --breakpoint-medium: 61rem;
 }
 
 :root {

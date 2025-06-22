@@ -13,10 +13,16 @@ export const Contact = () => {
         >
             <div className="max-w-3xl mx-auto px-4 md:min-w-250">
                 <RevealOnScroll>
-                    <div className='flex justify-center items-center mb-10'>
-                        <h2 className="text-4xl font-extrabold text-center text-blue-500 border-b-4 px-5">
+                    <div className='flex flex-col justify-center items-center mb-8'>
+                        <h2 className="text-4xl font-extrabold text-center text-blue-500 border-b-4 mb-2 px-5">
                             Contact
                         </h2>
+                        <p className='text-primaryText text-md mt-1 transition-all duration-500 text-center max-w-150'>
+                            Are you interested in working together or do you have any questions?
+                        </p>
+                        <p className='text-primaryText text-md mb-2 mt-1 transition-all duration-500 text-center max-w-150'>
+                            Feel free to reach out, I am always open to new opportunities.
+                        </p>
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>

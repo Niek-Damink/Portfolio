@@ -34,41 +34,43 @@ export const About = () => {
                 className="min-h-screen flex items-center justify-center py-20"
         >
 
-                <div className="max-w-3xl mx-auto px-4 md:min-w-250 ">
+                <div className="max-w-3xl mx-auto px-4 lg:min-w-250">
                     <RevealOnScroll>
-                    <div className='flex justify-center items-center mb-5'>
-                        <h2 className="text-4xl font-extrabold mb-8 text-center text-blue-500 pb-2 border-b-4 px-5">
+                    <div className='flex flex-col justify-center items-center mb-8 '>
+                        <h2 className="text-4xl font-extrabold text-center mb-2 text-blue-500 pb-2 border-b-4 px-5">
                             About Me
                         </h2>
                     </div>
                     </RevealOnScroll>
                     <RevealOnScroll>
-                    <div className="flex md:flex-row flex-col md:space-x-20 space-y-2 mb-10 justify-around items-center">
-                        <div className="flex items-center space-x-3">
-                            <div className='bg-blue-500/20 rounded-full w-16 h-16 flex items-center justify-center'>
-                                <FaMapMarkerAlt className="text-blue-500 text-2xl" />
+                    <div className="flex mb-10 md:justify-around">
+                        <div className='mx-auto md:mx-0 flex md:flex-row flex-col space-y-2 md:space-x-20'>
+                            <div className="flex items-center space-x-3">
+                                <div className='bg-blue-500/20 rounded-full w-16 h-16 flex items-center justify-center'>
+                                    <FaMapMarkerAlt className="text-blue-500 text-2xl" />
+                                </div>
+                                <div className='flex flex-col'>
+                                    <p className='text-titleText/50 font-semibold transition-all duration-500 text-sm' > Location </p>
+                                    <p className='text-primaryText font-bold transition-all duration-500 text-md'>Oldenzaal, <br/> The Netherlands</p>
+                                </div>
                             </div>
-                            <div className='flex flex-col'>
-                                <p className='text-titleText/50 font-semibold transition-all duration-500 text-sm' > Location </p>
-                                <p className='text-primaryText font-bold transition-all duration-500 text-md'>Oldenzaal, <br/> The Netherlands</p>
+                            <div className="flex items-center space-x-3">
+                                <div className='bg-blue-500/20 rounded-full w-16 h-16 flex items-center justify-center'>
+                                    <FaUser className="text-blue-500 text-2xl" />
+                                </div>
+                                <div className='flex flex-col'>
+                                    <p className='text-titleText/50 font-semibold transition-all duration-500 text-sm'> Age </p>
+                                    <p className='text-primaryText font-bold transition-all duration-500 text-md'>Twenty <br/> Years Old</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="flex items-center space-x-3">
-                            <div className='bg-blue-500/20 rounded-full w-16 h-16 flex items-center justify-center'>
-                                <FaUser className="text-blue-500 text-2xl" />
-                            </div>
-                            <div className='flex flex-col'>
-                                <p className='text-titleText/50 font-semibold transition-all duration-500 text-sm'> Age </p>
-                                <p className='text-primaryText font-bold transition-all duration-500 text-md'>Twenty <br/> Years Old</p>
-                            </div>
-                        </div>
-                        <div className="flex items-center space-x-3">
-                            <div className='bg-blue-500/20 rounded-full w-16 h-16 flex items-center justify-center'>
-                                <FaGraduationCap className="text-blue-500 text-3xl" />
-                            </div>
-                            <div>
-                                <p className='text-titleText/50 font-semibold transition-all duration-500 text-sm'> Study </p>
-                                <p className='text-primaryText font-bold transition-all duration-500 text-md'>Master's in <br/> Computer Science</p>
+                            <div className="flex items-center space-x-3">
+                                <div className='bg-blue-500/20 rounded-full w-16 h-16 flex items-center justify-center'>
+                                    <FaGraduationCap className="text-blue-500 text-3xl" />
+                                </div>
+                                <div>
+                                    <p className='text-titleText/50 font-semibold transition-all duration-500 text-sm'> Study </p>
+                                    <p className='text-primaryText font-bold transition-all duration-500 text-md'>Master's in <br/> Computer Science</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -86,9 +88,9 @@ export const About = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-5">
+                        <div className="flex flex-wrap gap-3 mt-5 justify-center">
                             {techStack.map((tech, index) => (
-                                <div key={index} className="flex flex-row items-center p-2 rounded-2xl border-3 bg-cardBackground hover:bg-blue-500/10 hover:-translate-y-1 border-titleText/10 hover:border-primaryText/10 transition-all duration-500">
+                                <div key={index} className="flex flex-row items-center p-2 rounded-2xl border-3 w-45 md:w-58 bg-cardBackground hover:bg-blue-500/10 hover:-translate-y-1 border-titleText/10 hover:border-primaryText/10 transition-all duration-500">
                                     <div className={`p-3 rounded-lg ${tech.bgColor}`}>
                                         <tech.icon className={`text-2xl ${tech.color}`} />
                                     </div>
@@ -127,7 +129,7 @@ export const About = () => {
                         </div>
                     </div>
                     </RevealOnScroll>
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-15'>
+                    <div className='grid grid-cols-1 medium:grid-cols-2 gap-6 mt-15'>
                         <RevealOnScroll direction='left'>
                             <Card>
                                 <div className='flex items-center space-x-4'>

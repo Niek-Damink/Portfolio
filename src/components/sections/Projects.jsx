@@ -43,10 +43,13 @@ export const Projects = () => {
             className="min-h-screen flex items-center justify-center py-20">
             <div className="max-w-5xl mx-auto px-4">
                 <RevealOnScroll>
-                <div className='flex justify-center items-center mb-5'>
-                        <h2 className="text-4xl font-extrabold mb-8 text-center text-blue-500 pb-2 border-b-4 px-5">
+                <div className='flex flex-col justify-center items-center mb-8'>
+                        <h2 className="text-4xl font-extrabold text-center mb-2 text-blue-500 pb-2 border-b-4 px-5">
                             Projects
                         </h2>
+                        <p className='text-primaryText text-md mb-2 mt-1 transition-all duration-500 text-center'>
+                            These are some projects I have developed during my studies and in my own time. They range from data analysis for academic papers to interactive dashboards and web apps.
+                        </p>
                     </div>
                 </RevealOnScroll>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
