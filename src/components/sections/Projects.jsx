@@ -1,11 +1,13 @@
 import { FaYoutube, FaGithub, FaBookOpen, FaGlobe} from 'react-icons/fa';
 import { RevealOnScroll } from '../RevealOnScroll';
 import { Card } from "../Card";
+import { ShiningTitle } from '../ShiningTitle';
 
 import portofolio from '../../assets/portofolio.png';
 import task_scheduling from '../../assets/task_scheduling.png';
 import MerlinRoads from '../../assets/MerlinRoads.png';
 import PokerPals from '../../assets/PokerPals.png';
+
 
 const projects = [
     {
@@ -44,9 +46,7 @@ export const Projects = () => {
             <div className="max-w-5xl mx-auto px-4">
                 <RevealOnScroll>
                 <div className='flex flex-col justify-center items-center mb-8'>
-                        <h2 className="text-4xl font-extrabold text-center mb-2 text-blue-500 pb-2 border-b-4 px-5">
-                            Projects
-                        </h2>
+                        <ShiningTitle>Projects</ShiningTitle>
                         <p className='text-primaryText text-md mb-2 mt-1 transition-all duration-500 text-center'>
                             These are some projects I have developed during my studies and in my own time. They range from data analysis for academic papers to interactive dashboards and web apps.
                         </p>

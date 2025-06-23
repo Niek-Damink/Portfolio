@@ -66,6 +66,19 @@ html, body {
     }
   }
 
+  @keyframes shiny {
+    0%,100% {
+        background-position: calc(-100% - 70px) 0;
+      }
+    50% {
+        background-position: calc(100% + 70px) 0;
+      }
+  }
+
+  .animate-shiny{
+     animation: shiny 8s infinite;
+  }
+
   .animate-in{
     animation: in 0.6s ease-in-out forwards;
   }

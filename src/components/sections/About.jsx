@@ -4,6 +4,7 @@ import { DiPython} from 'react-icons/di';
 import { RevealOnScroll } from '../RevealOnScroll';
 import { ExperienceItem } from '../ExperienceItem';
 import { Card } from "../Card";
+import { ShiningTitle } from '../ShiningTitle';
 
 const techStack = [
     { icon: FaJava, name: 'Java', description: 'Backend Development', color: "text-blue-200", bgColor: "bg-cyan-900" },
@@ -37,9 +38,7 @@ export const About = () => {
                 <div className="max-w-3xl mx-auto px-4 lg:min-w-250">
                     <RevealOnScroll>
                     <div className='flex flex-col justify-center items-center mb-8 '>
-                        <h2 className="text-4xl font-extrabold text-center mb-2 text-blue-500 pb-2 border-b-4 px-5">
-                            About Me
-                        </h2>
+                        <ShiningTitle>About Me</ShiningTitle>
                     </div>
                     </RevealOnScroll>
                     <RevealOnScroll>

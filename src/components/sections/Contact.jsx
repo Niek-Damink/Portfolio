@@ -1,7 +1,8 @@
-import { FaWhatsapp, FaGithub, FaLinkedin, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { RevealOnScroll } from '../RevealOnScroll';
 import { Card } from "../Card";
+import { ShiningTitle } from '../ShiningTitle';
 import logo2 from '../../assets/Niek_Round.jpg';
 
 
@@ -14,9 +15,7 @@ export const Contact = () => {
             <div className="max-w-3xl mx-auto px-4 md:min-w-250">
                 <RevealOnScroll>
                     <div className='flex flex-col justify-center items-center mb-8'>
-                        <h2 className="text-4xl font-extrabold text-center text-blue-500 border-b-4 mb-2 px-5">
-                            Contact
-                        </h2>
+                        <ShiningTitle>Contact</ShiningTitle>
                         <p className='text-primaryText text-md mt-1 transition-all duration-500 text-center max-w-150'>
                             Are you interested in working together or do you have any questions?
                         </p>
