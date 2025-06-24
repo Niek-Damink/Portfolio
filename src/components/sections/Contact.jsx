@@ -39,13 +39,13 @@ export const Contact = () => {
                                             rel="noopener noreferrer" 
                                             className='bg-blue-500/20 hover:cursor-pointer mr-5 rounded-full p-4 hover:-translate-y-1 hover:bg-blue-500/50 transition-all duration-500'
                                         >
-                                            <MdEmail className='text-4xl text-titleText transition-all duration-500' />
+                                            <MdEmail className='text-4xl transition-all duration-500 text-blue-500' />
                                         </a>
                                         <div>
-                                            <p className='text-primaryText/70 text-md'>
+                                            <p className='text-primaryText/70 text-md transition-all duration-500'>
                                                 Email
                                             </p>
-                                            <p className='text-titleText text-lg'>niekdamink@hotmail.com</p>
+                                            <p className='text-titleText text-lg transition-all duration-500'>niekdamink@hotmail.com</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center">
@@ -55,13 +55,13 @@ export const Contact = () => {
                                             rel="noopener noreferrer" 
                                             className='bg-blue-500/20 mr-5 rounded-full p-4 hover:-translate-y-1 hover:cursor-pointer hover:bg-blue-500/50 transition-all duration-500'
                                         >
-                                            <FaMapMarkerAlt className='text-4xl text-titleText transition-all duration-500' />
+                                            <FaMapMarkerAlt className='text-4xl transition-all duration-500 text-blue-500' />
                                         </a>
                                         <div>
-                                            <p className='text-primaryText/70 text-md'>
+                                            <p className='text-primaryText/70 text-md transition-all duration-500'>
                                                 Location
                                             </p>
-                                            <p className='text-titleText text-lg'>Oldenzaal, The Netherlands</p>
+                                            <p className='text-titleText text-lg transition-all duration-500'>Oldenzaal, The Netherlands</p>
                                         </div>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@ export const Contact = () => {
                                     <img src={logo2} className='w-50 h-50 rounded-full border-5 border-titleText/10 transition-all duration-500' />
                                 </div>
                             </div>
-                            <p className='text-xl text-titleText font-extrabold mt-10 text-center'>
+                            <p className='text-xl text-titleText font-extrabold mt-10 text-center transition-all duration-500'>
                                 Connect with me on Social Media
                             </p>
                             <div className="flex justify-center space-x-5 mt-5">
