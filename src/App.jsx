@@ -8,6 +8,7 @@ import { Contact } from './components/sections/Contact'
 import { MobileMenu } from './components/MobileMenu';
 import { LoadingScreen } from './components/LoadingScreen';
 import { useState } from 'react';
+import { Footer } from './components/Footer';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -27,6 +28,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     </>
   )
