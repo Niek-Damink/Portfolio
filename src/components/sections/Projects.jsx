@@ -3,7 +3,7 @@ import { RevealOnScroll } from '../RevealOnScroll';
 import { Card } from "../Card";
 import { ShiningTitle } from '../ShiningTitle';
 
-import portofolio from '../../assets/portofolio.png';
+import portfolio from '../../assets/portfolio.png';
 import task_scheduling from '../../assets/task_scheduling.png';
 import MerlinRoads from '../../assets/MerlinRoads.png';
 import PokerPals from '../../assets/PokerPals.png';
@@ -29,10 +29,10 @@ const projects = [
         links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/PokerPals", name:"Github", active:false}], 
         description:"PokerPals is an ongoing project where I'm developing a poker statistics website for my friend group. It features player accounts, team chats, and awards like most wins or losses. It also tracks game history, detailed player stats, and total earnings across all sessions."
     }, {
-        title: "Portofolio", 
-        photo: portofolio,
+        title: "Portfolio", 
+        photo: portfolio,
         technologies:["React", "TailwindCSS", "JavaScript"], 
-        links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/portofolio", name:"Github", active:true}, {icon:FaGlobe, link:"https://niekdamink.com", name:"Visit", active:true}], 
+        links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/portfolio", name:"Github", active:true}, {icon:FaGlobe, link:"https://niekdamink.com", name:"Visit", active:true}], 
         description:"This website serves as my personal portfolio, where I share a selection of projects I have worked on, along with an overview of the skills I have developed and the experiences I have gained through various learning and work opportunities."
     }
 ]

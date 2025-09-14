@@ -1,4 +1,4 @@
-# Portofolio Website
+# Portfolio Website
 This website serves as my personal portfolio, where I share a selection of projects I have worked on, along with an overview of the skills I have developed and the experiences I have gained through various learning and work opportunities.
 
 ## Tech Stack
