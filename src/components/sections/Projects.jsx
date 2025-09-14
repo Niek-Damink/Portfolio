@@ -27,7 +27,7 @@ const projects = [
         photo: PokerPals,
         technologies:["Django", "TailwindCSS", "Python", "JavaScript"], 
         links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/PokerPals", name:"Github", active:false}], 
-        description:"PokerPals is an ongoing project to create a poker statistics website built for my friend group. It features player accounts, team chats, and awards like most wins or losses. It also tracks game history, detailed player stats, and total earnings across all sessions."
+        description:"PokerPals is an ongoing project where I'm developing a poker statistics website for my friend group. It features player accounts, team chats, and awards like most wins or losses. It also tracks game history, detailed player stats, and total earnings across all sessions."
     }, {
         title: "Portofolio", 
         photo: portofolio,
