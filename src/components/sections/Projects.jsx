@@ -20,7 +20,7 @@ const projects = [
         title: "LBC Task Scheduling Heuristic", 
         photo: task_scheduling,
         technologies:["Python", "R", "IGraph", "Jupyter Notebook", "Data Visualization"], 
-        links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/LBC_TaskSched", name:"Github", active:true}, {icon:FaBookOpen, link:"/Research_Project_Paper.pdf", name:"Read", active:true}], 
+        links:[{icon:FaGithub, link:"https://github.com/Niek-Damink/LBC_TaskSched", name:"Github", active:true}, {icon:FaBookOpen, link:import.meta.env.BASE_URL + "Research_Project_Paper.pdf", name:"Read", active:true}], 
         description:"This project, developed as part of my thesis, introduces task scheduling heuristics based on Longest Betweenness Centrality to improve efficiency in distributed systems. The heuristics are evaluated against established methods using synthetic task graphs."
     }, {
         title: "PokerPals", 
