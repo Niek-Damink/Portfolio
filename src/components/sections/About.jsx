@@ -59,7 +59,7 @@ export const About = () => {
                                 </div>
                                 <div className='flex flex-col'>
                                     <p className='text-titleText/50 font-semibold transition-all duration-500 text-sm'> Age </p>
-                                    <p className='text-primaryText font-bold transition-all duration-500 text-md'>Twenty <br/> Years Old</p>
+                                    <p className='text-primaryText font-bold transition-all duration-500 text-md'>Twenty-One <br/> Years Old</p>
                                 </div>
                             </div>
                             <div className="flex items-center space-x-3">
